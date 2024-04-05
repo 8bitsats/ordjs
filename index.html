@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blockmap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="button-container">
+    <button class="download-btn" onclick="window.open('https://twitter.com/0rdlibrary')">Follow 8bit on twitter</button>
+    </div>  
+    <div id="loadingIndicator" style="display: none;">Loading...</div>
+    <form id="blockForm">
+        <label for="blockHash">Enter Block Number:</label>
+        <input type="text" id="blockHash" name="blockHash">
+        <button id="loadingIndicatorButton" type="submit">Load Block</button>
+        <button id="toggleButton" type="button" onclick="toggleColorByTransaction()">Color</button>
+        <button id="toggleGeometryButton" type="button" onclick="toggleGeometryMode()">Sphere</button>
+
+    </form>
+    <div id="canvasContainer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
